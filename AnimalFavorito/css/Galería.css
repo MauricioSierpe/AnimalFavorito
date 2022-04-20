@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000080;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #000080;
+    text-align: center;
+    padding: 50px 20px 20px;
+    text-decoration: dashed;
+    font-style: italic;
+    font-size:x-large;
+}
+
+nav a:hover {
+    color: #000080;
+    background-color: #87CEFA;
+    
+}
+
+h2 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000080;
+
+}
+
+body {
+    text-align:center;
+    color: #000080;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    
+}
+
+.container{
+    width: 500%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display:block;
+    grid-gap: 70px;
+    grid-template-columns: repeat(3, 1fr)
+  }
+  
+  
+  .item{
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 300ms;
+    position: relative;
+  }
+  
+  .item::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: scale(0);
+    transition: all 300ms;
+  
+  }
+  
+  .item:hover:after{
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .item:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .item-img{
+    max-width: 120%;
+    display: block;
+  }
+  
